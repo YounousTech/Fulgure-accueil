@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fulgure</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="icon" type="image/x-icon" href="LogoF.png" /><link rel="shortcut icon" type="image/x-icon" href="spediwebiylogo.png" />
+</head>
+<body>
+
+
+
+
+  <section class="logo-and-brand">
+    <img
+      class="fulgure-logo"
+      src="LogoF.png"
+      alt="fulgure logo">
+    <h1 class="brand">Fulgure</h1>
+  </section>
+  <section class="search-wrapper">
+    <form>
+      <img
+        class="ddg-logo"
+        src="lopeshearch.png"
+        alt="ddg-logo">
+      <input
+        class="search-bar"
+        type="text"
+        name="search"
+        placeholder="Search with Fulgure">
+    </form>
+  </section>
+  
+  <div class="header">
+        <?php
+        session_start();
+        // Si l'utilisateur est connecté, afficher son nom et un bouton de déconnexion
+        if(isset($_SESSION['user_id'])) {
+        ?>
+        <div class="login-signin-box">
+            <nav>
+                <ul>
+                    <li><p><?php echo "Connecté en tant que : ".$_SESSION['username']." ";?></p></li>
+                    <li><a href='./public/deconnexion.php'><button class="loginbutton" type="button">Déconnexion</button></a></li>
+                </ul>
+            </nav>
+        </div>
+        <?php
+        } else {
+        // Si l'utilisateur n'est pas connecté, afficher les boutons d'inscription et de connexion
+        ?>
+        <div class="login-signin-box">
+            <nav>
+                <ul>
+                    <li><a class="links" href="./public/signup.html"><button class="signbutton" type="button">Inscrition</button></a></li>
+                    <li><a class="links" href="./public/login.html"><button class="loginbutton" type="button">Connexion</button></a></li>
+                </ul>
+            </nav>
+        </div>
+        <?php
+        }
+        ?>
+  
+
+  <footer class="section-wrapper">
+
+    <ul>
+      <li>La famille : </li>
+       <li><a class="link" href=https://discord.gg/m2Hj9MDAHw>Discord</a></li>
+      <li>·</li>
+      <li><a class="link" href=https://github.com/YounousTech>YounousTech</a></li>
+      <li>·</li>
+      <li><a class="link" href=https://fulgure.fr/>Fulgure</a></li>
+      <li>·</li>
+      <li><a class="link" href=https://fulgure.fr/about.html>A propos</a></li>
+      <li>·</li>
+      <li><a class="link" href=https://fulgure.fr/history/index.php>Historique</a></li>
+      <li>·</li>
+      <li><a class="link" href=#>Notre IA</a></li>
+    </ul>
+    <a class="link" href=#>Privacy Notice</a>
+  </footer>
+
+</body>
+</html>
