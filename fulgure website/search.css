@@ -1,0 +1,159 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 20px 0 0;
+  width: 50%;
+}
+
+
+input[type="text"] {
+  flex: 1;
+  padding: 1px 50px;
+  border: none;
+  font-size: 16px;
+  color: #333;
+}
+
+
+
+
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #0072c6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  margin-left: 20px;
+}
+
+
+.search-wrapper {
+  background-color: black;
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+form {
+  width: 720px;
+  position: relative;
+  margin: auto;
+}
+
+.ddg-logo {
+  width: 25px;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  z-index: 1;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 15px;
+  padding-left: 50px;
+  height: 50px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(58, 57, 68, 0.2);
+  border: none;
+  font-size: 15px;
+}
+
+.search-bar::placeholder {
+  color: #000;
+  opacity: 0.5;
+}
+
+.search-bar:focus {
+  outline: 1px solid #0060DF;
+}
+
+p .image{
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  font : italic;
+
+}
+nav li {
+  flex: auto ;
+}
+body{
+  
+text-decoration: none;                 /* Aucune décoration */
+font : italic;
+
+}
+
